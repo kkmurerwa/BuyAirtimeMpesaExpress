@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_width="203dp"
+        android:layout_height="39dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/vendor" android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="46dp"
+        app:layout_constraintTop_toTopOf="parent" android:hint="Vendor" android:spinnerMode="dropdown"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/phone"
+        app:layout_constraintEnd_toEndOf="@+id/vendor" app:layout_constraintStart_toStartOf="@+id/vendor"
+        app:layout_constraintTop_toBottomOf="@+id/vendor" android:layout_marginTop="40dp"
+        app:layout_constraintHorizontal_bias="0.503" android:hint="Phone Number"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/amount"
+        app:layout_constraintEnd_toEndOf="@+id/phone" app:layout_constraintStart_toStartOf="@+id/phone"
+        app:layout_constraintTop_toBottomOf="@+id/phone" android:layout_marginTop="40dp"
+        app:layout_constraintHorizontal_bias="0.0" android:hint="Amount"/>
+    <Button
+        android:text="Buy Airtime"
+        android:layout_width="162dp"
+        android:layout_height="51dp"
+        android:id="@+id/buttonCheckout" app:layout_constraintEnd_toEndOf="@+id/amount"
+        app:layout_constraintStart_toStartOf="@+id/amount" app:layout_constraintTop_toBottomOf="@+id/amount"
+        android:layout_marginTop="40dp" app:layout_constraintHorizontal_bias="0.496"
+        android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.075"/>
+</android.support.constraint.ConstraintLayout>
