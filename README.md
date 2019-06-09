@@ -1,0 +1,2 @@
+# BuyAirtimeMpesaExpress
+This is/was an experimental project whose target was to buy airtime for non-safaricom sim cards through their Mpesa-Express API. It however failed since I was unable to get the PASSKEY to any of the major airtime vendors in the country. The key is needed in order to be able to bill the amount requested to the client. Anyone who can improve it or find a workaround without the PASSKEY can submit a pull request so that the project can finally achieve some relative success.
